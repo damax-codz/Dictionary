@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3e330e8926.js" crossorigin="anonymous"></script>
+</head>
+<body onkeypress="check(event)">
+   
+   
+    <div class="contain">
+        <p class="dictionary">Dictionary</p>
+        <span class="name">by Damax hub</span>
+
+        
+        <input type="text" id="mytext" >
+       <input type="button" value="search" onclick="meanings()">
+    </div>
+  
+
+    
+        <div class="answer">
+            <span class="backarrow" >
+             <i class="fas fa-arrow-left" onclick="refix()"></i>
+            </span>
+            <h1></h1>
+            <p id="defone"></p>
+            
+            <p id="phonetics"></p>
+            <div class="lang">
+                <button class="english">English</button>
+                <buttton class="play" onclick="speak()" style="cursor: pointer;"><span>🔊</span> </buttton>
+                <button class="english">French</button>
+            </div>
+            <audio id="myaudio" style="display: none;"  controls >    </audio>
+            <div id="speak">
+        </div>
+  
+    
+
+</body>
+</html>

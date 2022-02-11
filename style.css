@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.contain{
+text-align: center;
+height: 280px;
+width: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+visibility: visible;
+border-radius: 10px;
+background: linear-gradient(rgba(0, 0, 0, 0.135),rgba(0, 0, 0, 0.135)),url('https://i.pinimg.com/originals/5b/fa/c6/5bfac6a727971be0fb3f4012afae0302.jpg');
+}
+.answer{
+position: absolute;
+height: 280px;
+width: 200px;
+display: flex;
+flex-direction: column;
+left: 100%;
+transition: left 2s;
+z-index: 1;
+border-radius: 10px;
+background: linear-gradient(rgba(0, 0, 0, 0.135),rgba(0, 0, 0, 0.135)),url('https://i.pinimg.com/originals/5b/fa/c6/5bfac6a727971be0fb3f4012afae0302.jpg');
+color: white;
+padding: 0px 5px 0px 5px ;
+}
+.answer>span{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 0px 0px 10px ;
+}
+input[type='text']{
+    width: 170px;
+    margin: 70px 0px 10px 0px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+input[type='text']:hover{
+    border: 2px solid rgb(93, 170, 221);
+   
+}
+input[type='button']{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+.lang{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.lang>button{
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.dictionary{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.name{
+    color: white;
+    margin-top: -20px;
+}
